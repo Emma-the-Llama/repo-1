@@ -2,7 +2,7 @@ cnt = 0
 for n in range(2, 100):
     for x in range(2, n):
         if n % x == 0:
-            if  n > 9950:
+            if  n > 9:
                  print(n, 'equals', x, '*', n // x )
             break
     else:
