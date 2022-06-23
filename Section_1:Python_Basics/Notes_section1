@@ -1,0 +1,60 @@
+Expression
+    Values + Operators
+    Ex. 2 + 2 (2 is value, + is operator)
+    Always evaluate down to a single value
+    BEDMAS is used
+
+Statements
+    Don't evaluate to a single value
+    Ex. Spam = 2 + 2
+    Ex. Spam = Spam + 1
+
+Data types
+    Integers 
+        Short form = Ints
+        Whole numbers
+        Ex. -10, 8
+    Floating point numbers
+        Short form = floats
+        Numbers with decimals
+        Ex. -3.14, 5.0
+    Strings
+        Begin and end with single quotation mark (')
+        When the operation + is used on strings, it is called string concatenation operator 
+        When the operation * is used on strings, it is called string replication
+        String ex. 'Alice'
+        String concatenation ex. 'Alice' + ' Bob' is 'Alice Bob'
+        String replication ex. 'Alice ' * 3 is 'Alice Alice Alice'
+
+Variables
+    Like a box that can store a single value
+    (variable name) = value
+    Above creates new variable
+    Variable evaluates to the value it contains
+
+The execution is the instruction which is currently being executed
+
+Comments
+    Used to write notes to yourself, or reminders about what the code is trying to do. 
+    Made by putting a # sign in front of what you want to write as a comment.
+
+Use blank lines to help organize your code into groups to make it easier to understand
+
+Functions - Like mini programs in the program
+    Print() function
+        Displays the string value inside the brackets on the screen
+    Input() function
+        Python waits for the user to type some text on the keyboard and press enter
+        Calls to the input function evaluate to the string value of what the user types
+        All input values are strings
+    Len() function
+        Takes a string argument and then evaluates to the integer value of the length of the string
+    str() int() and float() functions
+        Converts between data types
+        You can't do 'hello' + 9, because they both need to be strings. To fix this you could do 'hello + str(9)
+        
+Arguments
+    Values passed to functions
+    Ex. print('Hello world')
+    The 'Hello world' in this context is the argument
+        
