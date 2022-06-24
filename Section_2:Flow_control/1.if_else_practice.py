@@ -1,4 +1,4 @@
-print('What the password? Be careful, you only have one try!')
+print('What is the password? Be careful, you only have one try!')
 Password = input()
 if Password == 'blueberry':
     print('Access granted!')
