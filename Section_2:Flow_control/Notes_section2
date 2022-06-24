@@ -49,6 +49,9 @@ Elif statement
     Elif statements are skipped if false, until one of them is true. When it is true, the execution enters inside of that block.
     After one of the elif statements is true, it skips the rest of the elif statements that follow. So the order of elif statements does matter
     You can add an else statement to the end of the elif statements. The else statement will execute if all the previous conditions have been false.
+While loops
+    As long as condition in while loop is true, the while loop will keep looping the block inside of it. But once it is false, it skips the block and continues with the rest of the program.
+    
 
 Truthy and Falsey values
     For strings, the blank string is a falsey value, and everything else is truthy.
