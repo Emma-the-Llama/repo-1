@@ -51,6 +51,16 @@ Elif statement
     You can add an else statement to the end of the elif statements. The else statement will execute if all the previous conditions have been false.
 While loops
     As long as condition in while loop is true, the while loop will keep looping the block inside of it. But once it is false, it skips the block and continues with the rest of the program.
+    When the execution runs through a loop, it is called an iteration
+    Infinite loops and Ctrl+c
+        if you type something like: while True: print('hello'), it will go on infinitly. To stop this, just press ctrl+c
+    break statements
+        Can go inside a while loop
+        Causes execution to immediately jump out of the loop, and doesn't even check the condition again, it immediately goes to the first line out of the loop.
+    continue statements
+        Used inside loops
+        When it reaches a continue statement, the execution immediately jumps back to the start of the loop, and re-evaluates the loop's condition.
+for loops
     
 
 Truthy and Falsey values
