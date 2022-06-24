@@ -5,7 +5,7 @@ print('Hello!')
 print('I am your computer. What is your name?') #asks for name
 MyName = input() #new variable called MyName
 print('Well, it is very nice to meet you ' + MyName + '!')
-print('Want to know something cool? Your name is ' + str((len(MyName))) + ' letters long!') #prints length of letters in variable MyName. Needs to be converted to string.
+print('Want to know something cool? Your name is ' + str(len(MyName)) + ' letters long!') #prints length of letters in variable MyName. Needs to be converted to string.
 
 print('Well, if this is not too rude to ask, how old are you?') #asks for age
 MyAge = input() #new variable called MyAge

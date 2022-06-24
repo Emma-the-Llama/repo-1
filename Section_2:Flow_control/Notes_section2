@@ -1,0 +1,63 @@
+Boolean values
+    Only has two values, unlike integers and strings. These values are True and False.
+    Like any other value, boolean values can be used in expressions and stored in variables.
+    Make sure to type with capital T and F (True and False), and the rest of the word in lowercase. Don't write it as a string
+
+Comparison operators
+    Used in expressions just like the + operator or any other.
+    6 comparison operators:
+        == Equal to
+        != Not equal to
+        < Less than
+        > Greater than
+        <= Less than or equal to
+        >= Greater than or equal to
+    Evaluate to a boolean value
+    Ex. 42 = 42 is True
+    Ex. 42 <= -5 is False
+    The same string and integer would not be the same, but floats and integers are.
+    Ex. 42 != '5' is False
+    Ex. 42 != 5.0 is True
+
+Boolean operators
+    And operator
+        If all of them are True, then it evaluates to True. But if just one is False, it evaluates to False.
+        All except True and True is False.
+        Ex. True and True is True
+        Ex. False and True is False
+    Or operator
+        Evaluates to True if either or both values are True.
+        All except False and False is True.
+        Ex. True or False is True
+        Ex. False or False is False
+    Not operator
+        Evaluates to the opposite boolean value.
+        Ex. not True is False
+        Ex. not False is True
+        Unlike And/or, not operates on only one boolean value.
+
+If statement
+    Condition is just an expression in a flow control statement
+    If the statement is true it enters the indented code that follows, but if it is false it skips it.
+Else statement
+    If the statement is false, it skips the if statement and goes to the else statement.
+    Only one of the if or else blocks can be run. (only one of two blocks is executed)
+Elif statement
+    Used if you want one of many possible blocks to be executed.
+    Lets you provide as many additional conditions to check as you need.
+    If the statement is false, it skips the if statement and goes to the elif statements.
+    Elif statements are skipped if false, until one of them is true. When it is true, the execution enters inside of that block.
+    After one of the elif statements is true, it skips the rest of the elif statements that follow. So the order of elif statements does matter
+    You can add an else statement to the end of the elif statements. The else statement will execute if all the previous conditions have been false.
+
+Truthy and Falsey values
+    For strings, the blank string is a falsey value, and everything else is truthy.
+    For integers 0 is falsey, all others are truthy.
+    For floats, 0.0 is falsey, all others are truthy.
+    bool() function
+        returns 0, 0.0, ' ' as false, and everything else as true.
+
+Blocks
+    Indented code is called block.
+    A block is made up of lines of code that are indented at the same level.
+    New blocks only begin after statements that end in a colon.
