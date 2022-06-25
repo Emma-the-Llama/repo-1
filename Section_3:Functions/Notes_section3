@@ -3,6 +3,24 @@ Built-in Functions
     Comes with standard library, full of modules. 
     Modules are python programs that contains a related group of functions that can be used in your programs
     Ex. Math module has math related functions, random module has random number related functions, etc.
-    import Statements
+    import statements
         You can't use them unless you import them with an import statement.
         Type import, and then the thing you want to import.
+        You can import multiple functions at once by seperating them with a comma in the  import statements
+        After  doing this, you must type the module + . + function to use the function. Ex. random.randint
+        There is another type of import statement:  from (module) impoort *
+            ex. from random import *
+            This makes it  so you wouldn't need to type the module at the start of the function.
+            It is better to use  the other option, because typing the module at the start makes it more  clear.
+    Third party modules
+        Python comes with it's standard library, but you can also add on more modules.
+        You can install them using the pip program. HOW DO YOU DO THIS HELP
+
+Functions
+    random
+        randint #give  it a range and it gives you a random number in that range.
+    sys 
+        exit # If you want to stop the program before it reaches the bottom of instructions
+    pyperclip
+        copy #copies text to clipboard
+        paste #returns what is copied on clipboard
