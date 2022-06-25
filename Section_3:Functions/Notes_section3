@@ -1,0 +1,8 @@
+Built-in Functions
+    We already know: print(),input(), len()
+    Comes with standard library, full of modules. 
+    Modules are python programs that contains a related group of functions that can be used in your programs
+    Ex. Math module has math related functions, random module has random number related functions, etc.
+    import Statements
+        You can't use them unless you import them with an import statement.
+        Type import, and then the thing you want to import.

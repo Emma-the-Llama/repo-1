@@ -62,7 +62,12 @@ While loops
         When it reaches a continue statement, the execution immediately jumps back to the start of the loop, and re-evaluates the loop's condition.
 for loops
     Iterates a specific number of times
-    While loops can be used in place of for loops.
+    Uses range function
+        range(10) would return range(0,10), but it does not include the 10.
+        You can also write range(12,16), and only have it repeat between those numbers.
+     You can write: for i in range(<insert your range here>)
+     To change how much i would change by each time, write a third number in your range. This is how much it will change by. It can also by negative.
+     You can still use break and continue statements in for loops.
 
 Truthy and Falsey values
     For strings, the blank string is a falsey value, and everything else is truthy.
