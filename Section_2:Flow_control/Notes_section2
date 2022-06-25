@@ -61,7 +61,8 @@ While loops
         Used inside loops
         When it reaches a continue statement, the execution immediately jumps back to the start of the loop, and re-evaluates the loop's condition.
 for loops
-    
+    Iterates a specific number of times
+    While loops can be used in place of for loops.
 
 Truthy and Falsey values
     For strings, the blank string is a falsey value, and everything else is truthy.
