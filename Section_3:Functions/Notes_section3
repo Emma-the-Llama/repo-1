@@ -32,8 +32,20 @@ Creating your own functions:
     The name variable here is called a parameter. When the function is called the name parameter is assigned the argument that is is passed.  (see create function practice if confused)
     REMEMBER: arument = the value passed in the function call, / parameter = the variable inside the function
     When creating a function using the def statement, you can specify what return values should be with a return statement
+    Return statement can be put in the block of your new function you are creating, and it returns whatever is after it. 
+    You don't need a return statement in all your functions, and if it doesn't the return value defaults to the none value.
     
+Keyword arguments
+    Some functions have keyword arguments. These are often used for optional arguments to pass to a function call.
+    Print function automatically adds a new line character to the end of a string that's passed.
+    But you can get rid of this, by adding a comma, the keyword end, which is equal to ''
+    When you pass multiple string values to print, it automatically puts a space between them.
+    But if you pass the sep, it will allow you to change what the seperating character is. you could put sep='abc' to make the seperating character abc
+    Most of the time you don't need these keyword arguments.
 
-
-
+None value
+    Since all function calls return values, what does the print function return? Print doesn't return the string, it just displays the string as a side effect. 
+    It actually returns a special value called None.
+    None is a data type that represents the lack of a value.
+    
 
