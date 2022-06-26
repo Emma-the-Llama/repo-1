@@ -21,6 +21,19 @@ Functions
         randint #give  it a range and it gives you a random number in that range.
     sys 
         exit # If you want to stop the program before it reaches the bottom of instructions
-    pyperclip
+    pyperclip HOW DO YOU GET THIS?!?!?!
         copy #copies text to clipboard
         paste #returns what is copied on clipboard
+    
+Creating your own functions:
+    Create function by writing def, then your function name, and put what you want your function to do in a block underneath that.
+    This is good so instead of writing the code multiple times, you can just call to your function multiple times.
+    You can add a variable into your function, ex. def hi(name)
+    The name variable here is called a parameter. When the function is called the name parameter is assigned the argument that is is passed.  (see create function practice if confused)
+    REMEMBER: arument = the value passed in the function call, / parameter = the variable inside the function
+    When creating a function using the def statement, you can specify what return values should be with a return statement
+    
+
+
+
+
