@@ -48,4 +48,19 @@ None value
     It actually returns a special value called None.
     None is a data type that represents the lack of a value.
     
-
+Global and Local scopes
+    Variables inside a function can have the same name as a variable outside the function, but they are considered different variables
+    Parameters are variables that are assigned in a function are said to exist in that function's local scope
+    Variables that are assigned outside of all functions are said to exist in the global scope.
+    The scope covers an area of the source code. Any given line in your program is either in the global or local scopes.
+    Each function has it's own local scope
+    You can also think of a scope as a container of variables. Local variables are in local scopes, global variables are in global scopes.
+    The global scope is created when the program starts, and is destroyed when the program terminates.
+    A local scope is created whenever a function is called, and is all the variables assigned during this function call exist within that local scope. When the function returns, the local  scope is destroyed, and these variables are forgotten.
+    You should think of variables inside a function as being temporary. THey won't exist after the function returns.
+    Scopes matter for several reasons. 
+        Code in the global scope cannot use any local variables.
+        Code in a local scope can access global variables.
+        Code in one function's local scope cannot use variables in another function's local scope
+        You can use the same name for different variables if they are in different scopes.
+        Code in one function's local scope cannot use variables in any other function's local scope.
