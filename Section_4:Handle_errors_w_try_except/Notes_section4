@@ -1,0 +1,8 @@
+An error that happens inside a try block will cause code in the except block to execute. That code can handle a the error or display a message to the user so that the program can keep going!
+
+SEE THE TWO PROGRAMS FOR NOTES UP UNTIL HERE!!!!
+
+This can be useful for input validation.
+Say if the program needs an input in the form of an integer or float, but someone might give it a string. 
+That would cause an error, because to change the input from a string to an integer, the string needs to be a numerical value not letters.
+Look at try except practice 3 for an example to see how a try except statement can fix this.
