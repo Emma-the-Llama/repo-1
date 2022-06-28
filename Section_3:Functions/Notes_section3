@@ -65,3 +65,5 @@ Global and Local scopes
         You can use the same name for different variables if they are in different scopes.
         Code in one function's local scope cannot use variables in any other function's local scope.
     SEE ALL GLOBAL LOCAL SCOPE PRACTICES FOR MORE NOTES!!!!!
+    Why do we even have scopes, wouldn't it be simpler if everything was a global variable? The benefit that local scopes provide, is that they seperate a function's code from the rest of the program.
+    If something is going wrong, because a variable has some bad value, there is only a limited area of the program that you have to check for this bug.

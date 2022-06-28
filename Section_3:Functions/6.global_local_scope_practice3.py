@@ -19,3 +19,17 @@ eggs = 42
 spam() #therefore when it runs spam it prints out the local variable eggs which is 99
 
 print(eggs) #but now in the global scope, the eggs variable that it will print is the global variable which is 42.
+
+
+
+#But what if you want to assign a new value to a global variable from inside of a function?
+
+def spam(): #if you wanted to mark eggs in this local scope as a global variable, you need to add a global statement to the top of the function. 
+    global eggs #this is the global statement. This tells python that even though I have an assignment statement for eggs inside this function, eggs in this function will always refer to the global eggs variable. Don't create a seperate local variable.
+    eggs = 99 
+    print(eggs) 
+
+eggs = 42 
+
+spam() 
+print(eggs) #therefore, the eggs = 42 is overun by eggs = 99 causing it to print 99.
