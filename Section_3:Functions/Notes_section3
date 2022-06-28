@@ -64,3 +64,4 @@ Global and Local scopes
         Code in one function's local scope cannot use variables in another function's local scope
         You can use the same name for different variables if they are in different scopes.
         Code in one function's local scope cannot use variables in any other function's local scope.
+    SEE ALL GLOBAL LOCAL SCOPE PRACTICES FOR MORE NOTES!!!!!
