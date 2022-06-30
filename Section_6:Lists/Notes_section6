@@ -56,6 +56,48 @@ List
         This will automatically assaign each of those variables to each of the list values.
         See range multiple assignment practice for an example of this.
         You can also do this without a list, and just assign mutliple variables to multiple values in one line of code.
-    Augmented assignment operators
-        instead of using: spam = spam + 1, you can just use spam+= 1 which does the same thing.
-        You can also use this for subtracting multiplying and dividing.
+    
+    Methods
+        A method is the same thing as a function, except is attached or called on a certain value.
+        You can't call a method by itself, because python doesn't know what list you want to use that method on.
+        That is why you need to call it on a variable that contains a value.
+        Put the name of the variable, . , and then the method (other than that it is basically the same as a function.)
+        index() method
+            All list values have this method
+            It returns the index position of that value.
+            ex. spam.index('hello')
+            If you have duplicated values inside a list and you use the index method on it, it returns the index position of the first time that value shows up.
+        append() and insert() methods
+            the append list method adds a value to the end of a list
+            the insert method is similar, but it can insert a value at any place in the list
+            In the brackets, put the item's position, and then the value you want to be inserted in that position.
+            ex. spam.insert(1,'moose')
+            if you don't put anything for where you want the item's position to be, it automatically goes to the end.
+            You cannot use the append method with strings because it only works on lists
+        remove() method
+            as the argument in this method, put the value you would like removed.
+            ex. spam.remove('cat') would remove cat from the list spam regardless of where it is in the list.
+            This is different from the del statement, because it just deletes the place number of a list. the remove() deletes a certain value.
+            If a value appears multiple times in a list, only the first value would be removed.
+        sort() method
+            Lists with number values or string values can be sorted with this method.
+            If you have integer values in a list and use the sort method, it sorts them from smallest to largest.
+            If the list has string values, it sorts them by alphabetical order.
+            If you use the sort method but type: listname.sort(reverse=True), it would sort the same thing but in reverse order.
+            You can't sort lists that both have number and string values.
+            ASCII-betical order
+                pretty much the same thing, but uppercase characters come before lowercase characters
+                this is what is used for strings in sort() method
+            If you want true alphabetical sorting, write: listname.sort(key=str.lower).
+
+    Similarities between Lists and Strings
+        You can think of a string like a list in which each individual letter is another value.
+        You can use indexes and slices on strings just like on lists. 
+        You can use in and not operators on strings just like on lists.
+        Mutable and immutable data types
+            A string value is immutable. It cannot be changed. You cannot reassign letters in that string.
+            A list is mutable.
+
+Augmented assignment operators
+    instead of using: spam = spam + 1, you can just use spam+= 1 which does the same thing.
+    You can also use this for subtracting multiplying and dividing.
