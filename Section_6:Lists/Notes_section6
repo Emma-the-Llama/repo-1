@@ -97,11 +97,30 @@ List
         Mutable and immutable data typesm
             A string value is immutable. It cannot be changed. You cannot reassign letters in that string.
             A list is mutable.
-            SEE PROGRAM LISTS VS STRINGS FOR MORE NOTES!
+            SEE PROGRAM LISTS VS STRINGS FOR MORE NOTES!!!!!!
+            Why does python have these? Well, lists can be very big and can take up a lot of your computer's memory.
+            If a variable has a list that has 4 billion integers, then it would be very hard to copy that variable to another one, or every time you make a function call.
+            So it is easier to assign a reference and to only store the list once.
+            Copy.deepcopy() function
+                If you want a completely seperate list, use this.
+                You need to import the copy module.
+                This creates a brand new list with the same values, not just a reference.
+                LOOK AT COPY DEEPCOPY FUNCTION PRACTICE FOR MORE NOTES!!!!!
+        Passing Lists in function calls
+            SEE PROGRAM PASSING LISTS IN FUNCTION CALLS PROGRAM FOR MORE NOTES!!
         Creating new strings from slices
             The proper way to modify a string, is to create a new string, using slices.
             Use slices to pick out the parts of the string you want to keep, and use string concatenation to add new parts.
+    Line continuation
+        In most cases, the amount of indentations for a line of code in python tells what block it is in, but there is an exception to this rule.
+        Lists can actually span multiple lines of code.
+        Just indent the next value in your list.
+        SEE PROGRAM 4 FOR AN EXAMPLE OF WHAT THIS LOOKS LIKE.  
+        This is nice, because if you have a lot of values, you don't need to cram it all on one line that is super long. It is also easier to read.
+        You can do this not in a list too, by using \ (NOTE THIS IS NOT THE DIVISON SIGN IT IS OPPOSITE OF THAT)
+        SEE PROGRAM 4 FOR AN EXAMPL EOF WHAT THIS LOOKS LIKE.
 
+        
 
 Augmented assignment operators
     instead of using: spam = spam + 1, you can just use spam+= 1 which does the same thing.
