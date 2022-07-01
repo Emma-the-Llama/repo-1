@@ -94,9 +94,14 @@ List
         You can think of a string like a list in which each individual letter is another value.
         You can use indexes and slices on strings just like on lists. 
         You can use in and not operators on strings just like on lists.
-        Mutable and immutable data types
+        Mutable and immutable data typesm
             A string value is immutable. It cannot be changed. You cannot reassign letters in that string.
             A list is mutable.
+            SEE PROGRAM LISTS VS STRINGS FOR MORE NOTES!
+        Creating new strings from slices
+            The proper way to modify a string, is to create a new string, using slices.
+            Use slices to pick out the parts of the string you want to keep, and use string concatenation to add new parts.
+
 
 Augmented assignment operators
     instead of using: spam = spam + 1, you can just use spam+= 1 which does the same thing.
