@@ -1,0 +1,51 @@
+Dictionary data type
+    Like a list, a dictionary is a collection of many values.
+    But unlike list indexes, indexes in dictionaries can use many different data types, not just integers.
+    Indexes for dictionaries are called keys, and a key, with it's associated value, is called a key value pair.
+    In code, a dictionary is typed with curly braces.
+    Inside the braces are the key-value pair.
+    You type this by typing a string value for a key, a colon, and it's value.
+    You can have multiple key value pairs by seperating them with commas.
+    You can access these values through their keys, just like a list.
+    Just type the variable name, and have a square bracket containing the key (which is a string value). This will result in the value.
+    Dictionaries can still use integer values as keys, just like lists. But they don't have to start at 0, and they can be any number.
+    Unlike lists, items in dictionaries are unordered.
+    The order matters in determining if two lists are the same ([1, 2, 3] == [3, 2, 1] is false)
+    But this is not the case for dictionaries. The order of the key-value pairs can be different in 2 dictionaries, but python will consider them the same.
+    Trying to access a key that doesn't exist in a dictionary, will result in KeyError error message.
+    You can check if a key exists in a dictionary using the in and not in operators.
+    Dictionaries are mutable like lists. (variables hold references to dictionaries, not the dictionaries themselves.)
+    Dictionary Methods:
+        These return list like data types.
+        You need to type it like: list(dictionaryName.keys()) if you want it to actually return a list.
+        If you type it without the list at the beginning, it returns the same thing but with: dict_(name of method) in front of it.
+        keys()
+            This returns a list of all the keys in the dictionary.
+        values()
+            This returns a list of all the values in the dictionary.
+        items()
+            This returns a list with tuples inside of it holding each key value pair.
+            Tuples are like lists but they are immutable and use paranthesis instead of the square brackets.
+        You can use these methods in for loops.
+        SEE DICTIONARY PRACTICE FOR MORE INFO!!! I AM CONFUSED ABOUT FOR LOOPS :/
+        get()
+            It is hard to see wheter a key exists in a dictionary without an error message popping up.
+            To get rid of this, you would need to write an if statement and so if key in dictionary, print dictionary(key). If it doens't exist nothing shows up, and no error message happens.
+            But that is hard.
+            You can use the get() method instead. You need two arguments. The first is the key, and the second is a fallback default value that returns if that key doesn't exist.
+            SEE DICTIONARY PRACTICE FOR EXAMPLE!!
+            This is helpful in a situation like this.
+            Ex. picnicItems={'apples':2, 'cups':4}
+                print('I am bringing ' + str(get('napkins',0)) + ' napkins to the picnic.') (repeat this for other picnic items too.)
+        setdefault()
+            This is the opposite of the get method.
+            You'll often have to set a value in a dictionary for a certain key, only if that key doesn't already have a value.
+            SEE DICTIONARY PRACTICE FOR EXAMPLE!!!
+            This method allows you to set a value to a key if that key doens't already have a value.
+            If the key already has a value  and you use this, it doens't change anything.
+            This is a nice shortcut to see if a key exists or not.
+    You can also use the in and not in operators to see whether a certain key or value exists in a dictionary.
+    You can use them to see if a string is a value or key by saying ex. cat in dictionary.values()
+
+
+

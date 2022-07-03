@@ -120,8 +120,6 @@ List
         You can do this not in a list too, by using \ (NOTE THIS IS NOT THE DIVISON SIGN IT IS OPPOSITE OF THAT)
         SEE PROGRAM 4 FOR AN EXAMPL EOF WHAT THIS LOOKS LIKE.
 
-        
-
 Augmented assignment operators
     instead of using: spam = spam + 1, you can just use spam+= 1 which does the same thing.
     You can also use this for subtracting multiplying and dividing.
