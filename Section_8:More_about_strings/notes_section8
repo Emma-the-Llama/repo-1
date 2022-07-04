@@ -1,0 +1,22 @@
+Escape characters
+    This is how you use a ' inside of a string. 
+    ex. 'Hello! That is bob's cat' does not work.
+    Strings can start and end with double quotes instead of single quotes.
+    ex. "Hello! That is bob's cat". This works.
+    But if you want to use single and double quotes within a string, you will need to use escape characters.
+    An escape character consists of a \ followed by a letter that represents which escape character you want to add to the string.
+    ex. 'Hello! That is bob\'s cat' will work. The back slash signifies that the character that comes after it is not ending the string.
+    Some escape characters are:
+        \' = single quote
+        \" = double quote
+        \t = tab
+        \n = new line (break)
+        \\ = backslash
+    Raw Strings
+        If you have text that has many back slashes in it, and you don't want it to be seen as the beginning of an escape character, you can use this.
+        A raw string is the exact same as a normal string, but it begins with a lowercase r right before it.
+        ex. r'Hello! That is bob\'s cat' will be returned as: 'Hello! That is bob\'s cat'
+Multiline strings with triple quotes
+    Begins and ends with either ''' or """
+    Any quotes, tabs, or new lines between these are considered part of the string.
+    

@@ -44,8 +44,24 @@ Dictionary data type
             This method allows you to set a value to a key if that key doens't already have a value.
             If the key already has a value  and you use this, it doens't change anything.
             This is a nice shortcut to see if a key exists or not.
+        pprint module
+            If we wanted a cleaner display of the items in a dictionary,then we can use this.
+            this will do a "pretty print" of the dictionary
+            You need to import it at the beginning of the program
+            you write it as pprint.pprint(dictionaryName)
+            When you do this it prints out the dictionary very nicely and in order.
+            This module also has a pformat function that will return the string of what the pprint function normally prints out.
+
     You can also use the in and not in operators to see whether a certain key or value exists in a dictionary.
     You can use them to see if a string is a value or key by saying ex. cat in dictionary.values()
+    Data structures
+        Lists and dictionaries are powerful ways to organize data into structures that your program can handle.
+        A list that contains dictionaries is called a data structure.
+        We can use these to model real world things in a way our program can understand
+        SEE TIC TAC TOE PRACTICE FOR MORE INFO
+    type() function
+        You can pass any value to this, and it will tell you the data type of that value.
+
 
 
 

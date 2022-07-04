@@ -2,7 +2,7 @@ print('type a message!')
 message = input()
 count = {}
 
-for character in message:
+for character in message.upper():
     count.setdefault(character, 0)
     count[character] = count[character] +1
 
