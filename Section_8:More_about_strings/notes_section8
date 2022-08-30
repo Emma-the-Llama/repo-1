@@ -1,22 +1,139 @@
+"""
 Escape characters
-    This is how you use a ' inside of a string. 
-    ex. 'Hello! That is bob's cat' does not work.
-    Strings can start and end with double quotes instead of single quotes.
-    ex. "Hello! That is bob's cat". This works.
-    But if you want to use single and double quotes within a string, you will need to use escape characters.
-    An escape character consists of a \ followed by a letter that represents which escape character you want to add to the string.
-    ex. 'Hello! That is bob\'s cat' will work. The back slash signifies that the character that comes after it is not ending the string.
-    Some escape characters are:
-        \' = single quote
-        \" = double quote
-        \t = tab
-        \n = new line (break)
-        \\ = backslash
-    Raw Strings
-        If you have text that has many back slashes in it, and you don't want it to be seen as the beginning of an escape character, you can use this.
-        A raw string is the exact same as a normal string, but it begins with a lowercase r right before it.
-        ex. r'Hello! That is bob\'s cat' will be returned as: 'Hello! That is bob\'s cat'
+   This is how you use a ' inside of a string.
+   ex. 'Hello! That is bob's cat' does not work.
+   Strings can start and end with double quotes instead of single quotes.
+   ex. "Hello! That is bob's cat". This works.
+   But if you want to use single and double quotes within a string, you will need to use escape characters.
+   An escape character consists of a \ followed by a letter that represents which escape character you want to add to the string.
+   ex. 'Hello! That is bob\'s cat' will work. The back slash signifies that the character that comes after it is not ending the string.
+   Some escape characters are:
+       \' = single quote
+       \" = double quote
+       \t = tab
+       \n = new line (break)
+       \\ = backslash
+   Raw Strings
+       If you have text that has many back slashes in it, and you don't want it to be seen as the beginning of an escape character, you can use this.
+       A raw string is the exact same as a normal string, but it begins with a lowercase r right before it.
+       ex. r'Hello! That is bob\'s cat' will be returned as: 'Hello! That is bob\'s cat'
 Multiline strings with triple quotes
-    Begins and ends with either ''' or """
-    Any quotes, tabs, or new lines between these are considered part of the string.
-    
+   Begins and ends with either ''' or """ """
+   Any quotes, tabs, or new lines between these are considered part of the string.
+Escape characters
+   This is how you use a ' inside of a string.
+   ex. 'Hello! That is bob's cat' does not work.
+   Strings can start and end with double quotes instead of single quotes.
+   ex. "Hello! That is bob's cat". This works.
+   But if you want to use single and double quotes within a string, you will need to use escape characters.
+   An escape character consists of a \ followed by a letter that represents which escape character you want to add to the string.
+   ex. 'Hello! That is bob\'s cat' will work. The back slash signifies that the character that comes after it is not ending the string.
+   Some escape characters are:
+       \' = single quote
+       \" = double quote
+       \t = tab
+       \n = new line (break)
+       \\ = backslash
+   Raw Strings
+       If you have text that has many back slashes in it, and you don't want it to be seen as the beginning of an escape character, you can use this.
+       A raw string is the exact same as a normal string, but it begins with a lowercase r right before it.
+       ex. r'Hello! That is bob\'s cat' will be returned as: 'Hello! That is bob\'s cat'
+Multiline strings with triple quotes
+   Begins and ends with either ''' or """ """
+   Any quotes, tabs, or new lines between these are considered part of the string.
+   But if you put a string with this into a variable, if you run the variable it will put out a normal string justs with escape characters.
+Similarities between strings and lists
+   Strings use indexes, slices, in and not operators, the same way lists do
+   You can think of a string like a list but each character in it is a new value in the list
+   Keep in mind in and not operators are case sensitive. so HELLO is not in Hello World
+String methods
+   Keep in mind unlike list methods, string methods produce a whole new string not just modify the string in place (since they are immutable)
+   upper() and lower()
+       take a variable wtih a string in it, and write variable.upper() or lower(). This will make all letters of that string either upper or lower case
+       But since strings aren't modified in place, if you type out the variable it would still be the original version.
+       To fix this, you could write variable = variable.upper().
+       This is useful for the input function. If you want a yes or no answer, but the person might put Yes or No instead, use this method to change it to the desired case to compare to.
+   isupper() islower()
+       This returns a boolean value depending on if the string is upper or lower case.
+       Ex. variable = Hello
+           variable.islower() would be true
+       If you have a blank string, or only numbers, both isupper and islower would be false.
+   You can make method chains, combining both methods listed so far.
+   Ex. 'hello'.upper().isupper() would evaluate to true.
+   There are several more of these string methods that begin with is and return a boolean value.
+       isalpha() - letters only
+       isalnum() - letters and numbers only
+       isdecimal() - numbers only
+       isspace() - whitespace only
+       istitle() - titlecase only
+       *Title case are all words that begin with a capital letter followed by lowercase letters
+       You can also type in a string, and then take an index from it and use a method on that.
+       Ex. 'hello world'[5].isspace() would be true
+       You can also use:
+       title()
+       to make a string into a title string (just like lower and upper)
+   startswith(), endswith()
+       These return as true if a string value starts/ends with with a string that is passed to the method.
+       ex. 'hello world'.startswith('hello') would evaluate to true
+   join()
+       The join method is useful when you have a list of strings that need to be joined together into a single string
+       This method is called on a string, gets passed on a list of strings, and returns a string.
+       ex.
+       ','.join(['cats', 'bats', 'rats]) returns: 'cats,bats,rats'
+       It puts the string that it is called on in between the strings in a list.
+       You can also do this with a blank string, and it would return: 'catsbatsrats'
+   split()
+       This method does the opposite of the join method.
+       Its called on a string value and returns a list of strings.
+       ex.
+       'my name is simon'.split() returns ['my', 'name', 'is', 'simon']
+       In the list are all the individual words from the string.
+       It splits it on whitespace characters
+       We can have it split on other characters as well, by passing it the value that you want it split on.
+       (it doesn't include the character that you pass it)
+   rjust(), ljust()
+       returns a padded version of the string they are called on, with spaces inserted to left justify, or right justify the text.
+       ex.
+       'Hello'.rjust(10) would return: '     Hello'
+       You pass it the total amount of characters you want in the string, and depending on if it is rjust or ljust, it will insert spaces on the opposite side.
+       If you want the spaces to become a different character, after you write the length you want the string, put a comma and then the string value of a character you want to be inserted.
+       ex.
+       'Hello'.ljust(10, '!') would return: 'Hello!!!!!'
+   center()
+       Works just like ljust() and rjust(), but centers the text rather than justifying it to the left or right.
+   strip(), rstrip(), lstrip()
+       sometimes you might want to strip of all whitespace characters, or tabs or newlines from the right or left or both sides of the string.
+       ex.
+       spam =  '      hello'
+       spam.strip() would be 'hello'
+       REMEMBER, this doesn't modify spam in place. spam is still '      hello'
+       to change spam, you would write
+       spam = spam.strip()
+       strip() removes whitespace from both sides of the string.
+       lstrip() removes whitespace from the left side, and rstrip from the right side.
+       You can also pass this characters you want to remove instead of whitespace. But the characters you pass are deleted regardless of order, so it gets rid of characters not words.
+       Ex.
+       'SpamSpamBaconSpamEggsSpamSpam'.strip(maSp) <- it doesn't matter the order, it will only take out those letters
+       would evaluate to: BaconSpamEggs (The Spam in the middle doesn't dissapear because it is in the middle)
+   replace()
+       The replace string method takes two arguments, a string to look for, and a string to replace it with.
+       ex.
+       'hello there'.replace('hello', 'hi') would be 'hi there'
+The pyperclip module
+   This has copy and paste functions that can send text to, and receive text from your computers clipboard.
+   You need to install it since it doesn't come already on python """ HELP HOW DO YOU DO THIS """
+   pyperclip.copy(), pyperclip.paste()
+       This can copy and paste text to and from your clipboard
+String formatting
+   Normally when you want to combine multiple string values, you can use the + operator to concatenate the strings.
+   This can get hard though, if there are a lot of strings you must concatenate.
+   String formatting is also called string interpolation.
+   Instead of having all the +, you can just have a single string and type %s where you want to put the variables.
+   Then, after typing that out, type %(variable1, variable2, variable3) that you want to have inserted at the %s.
+  
+ 
+ 
+ 
+"""   
+  
+
